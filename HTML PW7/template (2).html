@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    .slider {
+        position: relative;
+        width: 100%;
+        max-width: 600px;
+        margin: auto;
+        overflow: hidden;
+        font-family: Arial, sans-serif;
+    }
+    .slide {
+        display: none;
+        padding: 20px;
+        text-align: center;
+    }
+    .active {
+        display: block;
+    }
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+    }
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+    .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+    }
+</style>
+</head>
+<body>
+
+<div class="slider">
+    <div class="slide active">
+        <h2>Repaint and Reflow</h2>
+        <p>**Repaint** occurs when changes are made to an element's visual styles that do not affect its layout on the page, such as color or visibility. Reflow, also known as layout, happens when the layout or size of an element changes, affecting the document's flow. Reflow is a more costly operation as it may require recalculating styles and layouts of the page.</p>
+    </div>
+    <div class="slide">
+        <h2>JavaScript and Page Performance</h2>
+        <p>JavaScript can affect page load speed and performance as it may block the main thread, delaying page rendering. Optimizing JavaScript execution and minimizing file sizes can improve performance.</p>
+    </div>
+    <div class="slide">
+        <h2>Minification of Scripts</h2>
+        <p>**Minification** is the process of removing unnecessary characters from code without changing its functionality. This results in smaller file sizes, leading to faster page load times and improved performance.</p>
+    </div>
+    <div class="slide">
+        <h2>JS Web Workers</h2>
+        <p>A JS Web Worker allows you to run JavaScript in the background, on a separate thread from the main execution thread of a web application. This helps in performing tasks without interfering with the user interface.</p>
+    </div>
+    <div class="slide">
+        <h2>Sources</h2>
+        <p>Here are the sources used for the answers:</p>
+        <ul>
+            <li>Repaint and Reflow: [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Glossary/Reflow)</li>
+            <li>JavaScript Performance: [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Learn/Performance/JavaScript), [Publii](https://getpublii.com/blog/javascript-speed-and-performance.html)</li>
+            <li>Minification: [Elementor](https://elementor.com/resources/glossary/what-is-minification/), [Cloudflare](https://www.cloudflare.com/learning/performance/why-minify-javascript-code/)</li>
+            <li>JS Web Workers: [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers), [W3Schools](https://www.w3schools.com/html/html5_webworkers.asp)</li>
+        </ul>
+    </div>
+
+    <a class="prev" onclick="changeSlide(-1)">❮</a>
+    <a class="next" onclick="changeSlide(1)">❯</a>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function changeSlide(n) {
+  showSlides(slideIndex += n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("slide");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  slides[slideIndex-1].style.display = "block";
+}
+</script>
+
+</body>
+</html>

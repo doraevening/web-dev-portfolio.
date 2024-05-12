@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashionable Layout</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            background: linear-gradient(to right, #ff4e50, #f9d423);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+        .hero {
+            background: url('hero.jpg') no-repeat center center;
+            background-size: cover;
+            padding: 100px 0;
+            text-align: center;
+            color: white;
+        }
+        .news {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .news-item {
+            background: #fff;
+            padding: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        .news-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .read-more {
+            color: #ff4e50;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <img src="hero.png" alt="Hero Image">
+        <h1>Welcome to Our Website</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </section>
+
+    <section class="news">
+        <div class="news-item">
+            <img src="news1.jpg" alt="News 1">
+            <h2>News Title 1</h2>
+            <p class="meta">Posted on January 5, 2023</p>
+            <p class="excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#" class="read-more">Read More</a>
+        </div>
+
+        <div class="news-item">
+            <img src="news2.jpg" alt="News 2">
+            <h2>News Title 2</h2>
+            <p class="meta">Posted on January 8, 2023</p>
+            <p class="excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#" class="read-more">Read More</a>
+        </div>
+
+        <div class="news-item">
+            <img src="news3.jpg" alt="News 3">
+            <h2>News Title 3</h2>
+            <p class="meta">Posted on January 7, 2023</p>
+            <p class="excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#" class="read-more">Read More</a>
+        </div>
+
+        <div class="news-item">
+            <img src="news4.jpg" alt="News 4">
+            <h2>News Title 4</h2>
+            <p class="meta">Posted on January 10, 2023</p>
+            <p class="excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#" class="read-more">Read More</a>
+        </div>
+    </section>
+</body>
+</html>

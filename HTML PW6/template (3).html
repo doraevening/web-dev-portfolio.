@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flexbox News Layout</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    header {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+    }
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 20px;
+    }
+    .top-news {
+        flex: 0 0 100%;
+        background-color: #f9f9f9;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    .news-section {
+        flex: 0 0 calc(70% - 20px);
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .news-item {
+        flex: 0 0 calc(33.33% - 20px);
+        background-color: #f9f9f9;
+        padding: 20px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+    .aside {
+        flex: 0 0 calc(30% - 20px);
+        background-color: #f9f9f9;
+        padding: 20px;
+    }
+    @media screen and (max-width: 768px) {
+        .news-item {
+            flex: 0 0 calc(50% - 20px);
+        }
+        .aside {
+            flex: 0 0 100%;
+            margin-top: 20px;
+        }
+    }
+    @media screen and (max-width: 480px) {
+        .news-item {
+            flex: 0 0 100%;
+            margin-right: 0;
+        }
+    }
+</style>
+</head>
+<body>
+<header>
+    <h1>News Website</h1>
+</header>
+<main>
+    <div class="top-news">
+        <img src="top-news.jpg" alt="Top News Image" style="width: 100%;">
+        <h2>Breaking News Headline</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <button>Read More</button>
+    </div>
+    <div class="news-section">
+        <div class="news-item">
+            <img src="news11.jpg" alt="News Thumbnail">
+            <h3>News Title 1</h3>
+            <p>Posted on January 1, 2021</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <button>Read More</button>
+        </div>
+        <div class="news-item">
+            <img src="news22.jpg" alt="News Thumbnail">
+            <h3>News Title 2</h3>
+            <p>Posted on January 2, 2021</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <button>Read More</button>
+        </div>
+        <div class="news-item">
+            <img src="news33.jpg" alt="News Thumbnail">
+            <h3>News Title 3</h3>
+            <p>Posted on January 3, 2021</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <button>Read More</button>
+        </div>
+    </div>
+    <aside class="aside">
+        <h3>Navigation Menu</h3>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">World News</a></li>
+            <li><a href="#">Technology</a></li>
+            <li><a href="#">Sports</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </aside>
+</main>
+</body>
+</html>

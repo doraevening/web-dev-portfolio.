@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical 3 Vecher Daria</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        main {
+            border: 2px solid ;
+            padding: 20px;
+        }
+        div {
+            border: 2px dashed #FFC0CB;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        p {
+            border: 3px double ;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        span {
+            border: 4px solid #;
+            padding: 5px;
+            margin: 5px;
+        }
+        a {
+            border: 2px dotted #f80;
+            padding: 8px;
+            margin: 8px;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        p {
+            line-height: 1.6;
+        }
+        header, footer {
+            background-color: #FFE4E1;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        /* Background Styles */
+        .bg-hex {
+            background-color: #ffcccc; /* Hex color code */
+        }
+
+        .bg-color-name {
+opacity: 0.6;
+            background-color: lightblue; /* Color name */
+        }
+
+        .bg-rgba {
+            background-color: rgba(255, 0, 0, 0.5); /* RGBA function */
+        }
+
+        .simple-linear {
+  background: linear-gradient(blue, pink);
+}
+
+        .bg-repeating-gradient {
+            background-image: repeating-linear-gradient(45deg, #b3d9ff, #b3d9ff 30px, #99ccff 30px, #99ccff 60px); /* Repeating gradient background */
+        }
+
+        .bg-image {
+            background-image: url('back.png'); /* Image background */
+            background-size: cover;
+        }
+
+        .bg-multiple-images {
+            background-image: url('mount.png'), url('color.png'); /* Multiple images as background */
+            background-size: cover;
+            background-blend-mode: multiply; /* Blend mode for transparency */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Vecher Daria PW3</h1>
+    </header>
+
+    <main>
+<img src="screenshot.png" alt="screen">
+        <div>
+            <h2>Opening Developer Console in Mozilla Firefox and Safari</h2>
+            <p>In Mozilla Firefox, you can open the developer console by pressing <span>F12</span> or <span>Ctrl + Shift + K</span>. In Safari, you can access the developer tools by going to <a href="#">Develop > Show Web Inspector</a>.</p>
+        </div>
+
+        <p class="bg-hex">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec tortor eget arcu aliquet gravida. Ut in semper turpis.</p>
+
+        <p class="bg-color-name">Sed vel justo at nulla venenatis pellentesque. Phasellus nec mi vitae lorem varius consequat. Aenean euismod sapien.</p>
+
+        <p class="bg-rgba">Fusce auctor justo ac enim finibus, sed vulputate nisi tempus. Proin sit amet lectus eu metus ultricies ultrices.</p>
+
+        <p class="simple-linear"> Mauris euismod magna non ligula posuere, in fermentum risus ultrices. Donec sit amet velit et urna tristique tincidunt.</p>
+
+        <p class="bg-repeating-gradient">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nunc mollis velit nec ante hendrerit, et convallis turpis.</p>
+
+        <p class="bg-image">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer utarcu sed libero sagittis cursus.</p>
+
+        <p class="bg-multiple-images">Nulla facilisi. Aliquam erat volutpat. Sed at leo sed dolor viverra vehicula. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.</p>
+
+        <div>
+            <h2>Internal Links in HTML</h2>
+            <p>Generally, using <span>relative links</span> is preferable for internal links in HTML pages. Relative links are more flexible as they are based on the current location of the document. Absolute links, on the other hand, specify the complete URL of the linked page which can cause issues when moving or renaming files.</p>
+            <p>Use cases for choosing absolute links include linking to external websites or resources that have a fixed URL. Relative links are ideal for linking within the same website or when the structure of the website may change.</p>
+        </div>
+
+        <div>
+            <h2>Image Formats in Web Development</h2>
+            <p>JPG, GIF, and PNG are common image formats used in web development. JPG (or JPEG) is best for photographs and images with many colors. GIF is suitable for images with limited colors or animations. PNG is ideal for images with transparency or sharp edges.</p>
+            <p>WEBP is a modern image format developed by Google that provides superior compression and quality compared to JPG and PNG. SVG (Scalable Vector Graphics) is an XML-based vector image format that is resolution-independent and ideal for logos, icons, and illustrations.</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy Vecher Daria 353</p>
+    </footer>
+</body>
+</html>

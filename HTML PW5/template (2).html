@@ -1,0 +1,171 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="text/javascript" src="http://me.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=4WdHbqvgtoVpnnCrj-MsMqdpVqhvxNm_KPke9sL3Kts1eH28rqypN2TZDu78-SnaHbfccObG5a64npqXD74HNHWch3gopxrH3quWksdYjVbziUsbkZ4AvTQcMpK7jDCfdSjPHhRWxaTQZQo_ZJJprPzANWOOr7kGbB4wwny8HYzpUqlQGLU8aVQbsxLvw58CWWA8_u_XS8OwQsDz8xxn3w" charset="UTF-8"></script><style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+
+  background-color: #99b3ff;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 15%;
+  height: 2700px; /* only for demonstration, should be removed */
+  background: #ccd9ff;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: square;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 85%;
+  background-color: #ffffff;
+  height: 2700px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #b3c6ff;
+  padding: 100px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+<script type="text/javascript" nonce="1e95304cb10f4816872c9371382" src="//local.adguard.org?ts=1709799844936&amp;type=content-script&amp;dmn=eng.sbcde.by&amp;url=http%3A%2F%2Feng.sbcde.by%2Fpluginfile.php%2F38402%2Fassignsubmission_file%2Fsubmission_files%2F87301%2FReport-Practical1-Vecher-Daria.html%3Fforcedownload%3D1&amp;app=msedge.exe&amp;css=3&amp;js=1&amp;rel=1&amp;rji=1&amp;sbe=1"></script>
+<script type="text/javascript" nonce="1e95304cb10f4816872c9371382" src="//local.adguard.org?ts=1709799844936&amp;name=AdGuard%20Extra&amp;name=AdGuard%20Popup%20Blocker&amp;type=user-script"></script></head>
+<body>
+
+
+
+<header>
+  <h2>Vecher Daria PW5</h2>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline;
+}
+</style>
+</head>
+<body>
+
+<ul>
+      <li><a href="#1">a</a></li>
+      <li><a href="#2">b</a></li>
+      <li><a href="#3">c</a></li>
+      <li><a href="#4">d</a></li>
+      <li><a href="#5">e</a></li>
+</ul>
+
+</header>
+
+<section>
+  
+  <article>
+    <dt id="1" ><h1>Question a</h1></dt>
+    <p>What is a box model in CSS. Give box-sizing property definition</p>
+    <p>In CSS, the box model is a fundamental concept that describes how elements are rendered on a web page. It consists of four main components: content, padding, border, and margin. Each of these components contributes to the overall size and layout of an element on the page.<p>
+The box-sizing property in CSS allows you to control how the total width and height of an element is calculated. By default, when you set the width and height of an element, it only applies to the content area, excluding padding and border. However, by setting box-sizing: border-box;, you can include padding and border in the element's total width and height calculation. This can be particularly useful for creating consistent layouts and spacing on a webpage.</p>
+
+<dt id="2" ><h1>Question b</h1></dt>
+    <p>What is a “clearfix hack” and when does it need to be applied?
+</p>
+    <p>A "clearfix hack" is a technique used in CSS to clear floats and prevent layout issues that can occur when floating elements inside a container. When elements are floated, they are taken out of the normal flow of the document, which can cause their parent container to collapse if it does not have a specified height.</p>
+
+
+The clearfix hack is typically applied to a parent container that contains floated child elements. By adding a clearfix to the parent container, you can ensure that it expands to contain its floated children properly.</p>
+
+<dt id="3" ><h1>Question c</h1></dt>
+    <p>What is a “margin collapse” and what are the use cases for margin: auto and negative 
+margin values?</p>
+    <p>Margin collapse is a phenomenon in CSS where the top and bottom margins of two adjacent elements collapse into a single margin. This can occur when two block-level elements are stacked vertically with no content or padding between them. The collapsed margin will be equal to the larger of the two margins, effectively combining them.</p>
+Use cases for margin: auto and negative margin values:
+</p>
+1. margin: auto: Setting margin: auto on an element is commonly used to center that element horizontally within its container. When applied to a block-level element with a specified width, setting margin: auto will distribute the remaining space equally on both sides of the element, effectively centering it within its parent container. This technique is often used in responsive design to create centered layouts.</p>
+
+Example:</p>
+.centered {</p>
+  width: 50%;</p>
+  margin: auto;</p>
+}
+
+</p>
+2. Negative margin values: Negative margins can be used to create various layout effects and positioning adjustments in CSS</p>
+
+<dt id="4" ><h1>Question d</h1></dt>
+    <p>What was the problem with achieving Holy Grail layout</p>
+    <p> One of the main challenges in creating the Holy Grail layout is ensuring that all three columns have equal height, even if their content varies in length. This is important for maintaining a visually balanced design</p>
+The center column in the Holy Grail layout is typically designed to be flexible in width, allowing it to expand or contract based on the available space. Achieving this flexibility while keeping the layout responsive can be tricky. </p>
+Making the Holy Grail layout responsive, so it adapts to different screen sizes and devices, adds another layer of complexity. Implementing media queries and other responsive design techniques is essential for ensuring a consistent user experience across various devices.</p>
+
+
+<dt id="5" ><h1>Question e</h1></dt>
+    <p>What are the modern ways to achieve Holy Grail layout?</p>
+    <p>To address these challenges and achieve the Holy Grail layout successfully, web developers often use CSS techniques such as floats, flexbox, grid layout, and CSS frameworks like Bootstrap. These tools provide the necessary flexibility and control to create complex layouts like the Holy Grail design while maintaining responsiveness and cross-browser compatibility.</p>
+<div style="clear:both;"></div> <!-- Clear float after images -->
+            
+            <figure style="float:right; max-width:400px;">
+                <img src="88.png" alt="Image 1">
+                <img src="88.png" alt="Image 4">
+            </figure>
+            
+            <figure style="float:right; max-width:400px;">
+                <img src="88.png" alt="Image 2">
+                <img src="88.png" alt="Image 3">
+                
+            </figure>
+
+
+  </article>
+</section>
+
+<footer>
+<p>The hardest thing was to start. When I figured it out, I became interested in adding new «chips» to the site page. There were problems in the process, but I figured it out. 
+<p>Thank you!</p>
+</footer>
+
+</body>
+</html>
